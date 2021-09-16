@@ -1,0 +1,15 @@
+body{
+
+}
+
+#front{
+ display: grid;
+}
+
+#nav{
+  display: grid;
+}
+
+.nav-items{
+
+}

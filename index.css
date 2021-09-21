@@ -12,7 +12,7 @@
 #nav{
   display: flex;
   justify-content: space-between;
-  grid-area: 2/3/3/4;
+  grid-area: 2/2/3/5;
 }
 
 .nav-items{
@@ -20,5 +20,32 @@
 }
 
 #carousel{
-  grid-area: 2/2/3/3;
+  grid-area: 4/3/5/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#previous{
+  grid-area: 4/2/5/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#next{
+  grid-area: 4/4/5/5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img{
+  height: 200px;
+}
+
+button{
+  background: none;
+	border: none;
 }

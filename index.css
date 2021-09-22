@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
 *{
-  height: 100%
+  box-sizing: border-box;
 }
 
 #container{
  display: grid;
  grid-template-columns: 20% 10% 40% 10% 20%;
  grid-template-rows: 10% 20% 10% 40% 20%;
+ height:100vh;
  /* grid-gap: 10px; */
 }
 
@@ -15,8 +18,33 @@
   grid-area: 2/2/3/5;
 }
 
-.nav-items{
+.nav-items a{
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
 
+#coming_soon{
+font-size: 2rem;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+#tinyAppName{
+  display: flex;
+}
+
+#carousel{
+  font-family: 'Audiowide', cursive;
+  font-size: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#location{
+  color: rgb(46, 217, 235);
 }
 
 #carousel{
@@ -24,9 +52,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  size:
 }
 
 #previous{
+  font-size: 2rem;
   grid-area: 4/2/5/3;
   display: flex;
   align-items: center;
@@ -36,6 +66,7 @@
 
 #next{
   grid-area: 4/4/5/5;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;

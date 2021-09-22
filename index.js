@@ -5,11 +5,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const appNames = ['app', 'blog', 'shop', 'note', 'game', 'grave']
 
   let currentLocOfAppInCarousel = 0;
-  appName.innerHTML = `tiny ${appNames[currentLocOfAppInCarousel]}`
+  appName.innerHTML = `${appNames[currentLocOfAppInCarousel]}`
 
   //When the user clicks previous in the carousel
-  previous.addEventListener("click", () => {
-
+  previous.addEventListener("click", (e) => {
+    if (currentLocOfAppInCarousel === 0) {
+      currentLocOfAppInCarousel = appNames.length - 1
+    } else {
+      currentLocOfAppInCarousel--
+    }
+    appName.innerHTML = `${appNames[currentLocOfAppInCarousel]}`
   })
 
 
@@ -20,6 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       currentLocOfAppInCarousel++
     }
-    appName.innerHTML = `tiny ${appNames[currentLocOfAppInCarousel]}`
+    appName.innerHTML = `${appNames[currentLocOfAppInCarousel]}`
   })
 })
